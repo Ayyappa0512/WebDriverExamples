@@ -42,7 +42,7 @@ public class Base {
 		@BeforeTest(alwaysRun=true)
 		public synchronized void setup() {
 			String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	        String reportFileLocation = System.getProperty("user.dir")+"/test-output/Test-Report_" + timestamp + ".html";
+	        String reportFileLocation = System.getProperty("user.dir")+"/ExtentReport/Test-Report_" + timestamp + ".html";
 			extent = ExtentManager.createInstance(reportFileLocation);
 			//ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportFileLocation);
 			//extent.attachReporter(htmlReporter);
