@@ -1,5 +1,6 @@
 package basics;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class Com8_Autocompletedropdown2 extends Base{
 				
 			driver.get("https://www.twoplugs.com/");
 			
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			
 			driver.findElement(By.xpath("//a[text()='Live Posting']")).click();
 			

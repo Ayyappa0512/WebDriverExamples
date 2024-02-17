@@ -1,11 +1,14 @@
 package basics;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -18,20 +21,28 @@ public class Com3_DropDown extends Base {
 	public void defaultmethod() throws InterruptedException {
 		try {
 			
-		driver.get("https://www.opencart.com");
+		driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div/a[@class='btn btn-black navbar-btn']")).click();
+//		driver.findElement(By.xpath("//div/a[@class='btn btn-black navbar-btn']")).click();
+//		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement drpdownele = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p/select")));
+//		WebElement drpdownele = driver.findElement(By.id("input-country"));
 		
-		WebElement drpdownele = driver.findElement(By.id("input-country"));
+
 		Select drpcountry = new Select(drpdownele);
 		
-		//drpcountry.selectByVisibleText("India");
-		//drpcountry.selectByValue("100");//Indonesia
+		drpcountry.selectByVisibleText("Cambodia");
 		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		
+		drpcountry.selectByValue("AUS");//Australia
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		//index cant see in html starts with 0
 		
-		//drpcountry.selectByIndex(99);
-		
+		drpcountry.selectByIndex(24); // Bermuda
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
 		//without using select method  can also selectind done
 		

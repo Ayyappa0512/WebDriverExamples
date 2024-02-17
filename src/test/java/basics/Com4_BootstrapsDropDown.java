@@ -14,7 +14,7 @@ public class Com4_BootstrapsDropDown extends Base {
 	public void demobootstrapsdropdown() throws InterruptedException {
 		
 		try {
-		//bootstraps dropdown cant have select html tag then we can use this mmethod to select option form the bootstaps dropdown
+		//bootstraps dropdown cant have select html tag then we can use this method to select option form the bootstraps dropdown
 		
 		driver.get("http://seleniumpractise.blogspot.com/2016/08/bootstrap-dropdown-example-for-selenium.html");
 		

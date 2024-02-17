@@ -18,7 +18,7 @@ public class Com14_SoftAsserstions extends Base{
 	@Test
 	public void softassert() {
 		try {
-		WebDriver driver =new FirefoxDriver();
+//		WebDriver driver =new FirefoxDriver();
 		SoftAssert softasset = new SoftAssert();
 		
 		int a=10;

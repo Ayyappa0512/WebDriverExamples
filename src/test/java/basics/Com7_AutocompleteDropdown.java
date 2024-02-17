@@ -2,6 +2,7 @@ package basics;
 
 
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +26,7 @@ public class Com7_AutocompleteDropdown extends Base{
 		
 		//Thread.sleep(3000);
 		//Assert.fail();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		List<WebElement> searchlist = driver.findElements(By.xpath("//div[@class='wM6W7d']/span"));
 		

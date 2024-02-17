@@ -23,11 +23,11 @@ public class Com2_GetTextvsGetAttributevalue extends Base {
 		
 		email.sendKeys("admin");
 		
-		System.out.println("Get Attribut emethod : "+email.getAttribute("value"));
-		System.out.println("Get Text emethod"+email.getText());
+		System.out.println("Get Attribut method : "+email.getAttribute("value"));
+		System.out.println("Get Text method"+email.getText());
 		
-		System.out.println("Get Attribut emethod : "+computer.getAttribute("value"));
-		System.out.println("Get Text emethod"+computer.getText());
+		System.out.println("Get Attribut method : "+computer.getAttribute("value"));
+		System.out.println("Get Text method: "+computer.getText());
 		
 		logger.log(Status.PASS, new Object(){}.getClass().getEnclosingMethod().getName() + " Passed");
 		}

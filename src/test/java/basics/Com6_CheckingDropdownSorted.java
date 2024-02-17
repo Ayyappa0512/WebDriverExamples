@@ -1,5 +1,6 @@
 package basics;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Com6_CheckingDropdownSorted extends Base {
 		try {
 		driver.get("https://www.twoplugs.com/");
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10) );
 		
 		driver.findElement(By.xpath("//a[text()='Live Posting']")).click();
 		

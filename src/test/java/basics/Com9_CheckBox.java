@@ -1,5 +1,6 @@
 package basics;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +20,7 @@ public class Com9_CheckBox extends Base{
 	
 			driver.get("https://itera-qa.azurewebsites.net/home/automation");
 			
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			//1 select one check box 
 			
