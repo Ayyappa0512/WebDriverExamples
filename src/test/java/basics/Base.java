@@ -110,7 +110,7 @@ public class Base {
 			TakesScreenshot ts =(TakesScreenshot) driver;
 			File src = ts.getScreenshotAs(OutputType.FILE);
 			String path = System.getProperty("user.dir") + "\\screenshots\\" + name + ".png";
-			File trg = new File(System.getProperty("user.dir") + "\\screenshots\\" + name + ".png");
+			File trg = new File(path);
 			try {
 				FileUtils.copyFile(src, trg);
 			} catch (IOException e) {
