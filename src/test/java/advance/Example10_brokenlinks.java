@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import basics.Base;
 
-public class Com10_brokenlinks extends Base {
+public class Example10_brokenlinks extends Base {
 	
 	@Test
 	public void brokenlinks() throws Exception {

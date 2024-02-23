@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com8_Autocompletedropdown2 extends Base{
+public class Example8_Autocompletedropdown2 extends Base{
 	
 		
 		@Test

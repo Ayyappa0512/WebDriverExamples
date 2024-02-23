@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com3_DropDown extends Base {
+public class Example3_DropDown extends Base {
 	
 	
 	//@Test(groups={"sanity","regression"}, enabled =true , dependsOnGroups={"",""},dependsOnMethods ="",dataProvider="",invocationCount=2,expectedExceptions=NoSuchElementException.class)

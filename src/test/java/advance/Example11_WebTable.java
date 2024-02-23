@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 
 import basics.Base;
 
-public class Com11_WebTable extends Base {
+public class Example11_WebTable extends Base {
 		
 		
 		@Test

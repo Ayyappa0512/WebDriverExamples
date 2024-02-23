@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com9_CheckBox extends Base{
+public class Example9_CheckBox extends Base{
 
 	
 		@Test

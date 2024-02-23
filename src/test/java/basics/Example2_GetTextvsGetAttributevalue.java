@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com2_GetTextvsGetAttributevalue extends Base {
+public class Example2_GetTextvsGetAttributevalue extends Base {
 	
 	@Test
     public void gettextvsgetattributevalue() {

@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 
 import basics.Base;
 
-public class Com12_Dynamic_webtable extends Base {
+public class Example12_Dynamic_webtable extends Base {
 		
 		@Test
 		public void dynamicwebtable() {
@@ -34,7 +34,7 @@ public class Com12_Dynamic_webtable extends Base {
 		}catch(AssertionError e) {
 			
 			//Base obj = new Base();
-			Com12_Dynamic_webtable o = new Com12_Dynamic_webtable();
+			Example12_Dynamic_webtable o = new Example12_Dynamic_webtable();
 			o.capturescreen(driver, "dynamicwebtable");
 			Assert.assertTrue(false);
 			logger.log(Status.PASS, new Object(){}.getClass().getEnclosingMethod().getName() + " Passed");

@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import basics.Base;
 
-public class Com14_SoftAsserstions extends Base{
+public class Example14_SoftAsserstions extends Base{
 
 	
 	@Test
@@ -41,6 +41,7 @@ public class Com14_SoftAsserstions extends Base{
 //		a1.sendKeys("a");
 //		a1.keyUp(Keys.CONTROL);
 //		a1.perform();
+		Keys.chord(Keys.CONTROL, "A");
 		logger.log(Status.PASS,new Object(){}.getClass().getEnclosingMethod().getName() + " Passed");
 		}
 		catch(Exception e) {

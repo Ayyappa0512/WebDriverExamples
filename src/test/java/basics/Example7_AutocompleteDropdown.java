@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 
-public class Com7_AutocompleteDropdown extends Base{
+public class Example7_AutocompleteDropdown extends Base{
 
 	
 	@Test

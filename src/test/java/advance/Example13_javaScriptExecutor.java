@@ -9,7 +9,7 @@ import com.aventstack.extentreports.Status;
 
 import basics.Base;
 
-public class Com13_javaScriptExecutor extends Base {
+public class Example13_javaScriptExecutor extends Base {
 		
 	
 	@Test
@@ -79,6 +79,8 @@ public class Com13_javaScriptExecutor extends Base {
 		String width=js.executeScript("return window.innerWidth;").toString();
 		System.out.println(height);
 		System.out.println(width);
+		
+		js.executeScript("arguments[0].scrollIntoView(true);", "WebElement");
 		
 		js.executeScript("window.scrollTo(0,500)");
 		logger.log(Status.PASS, new Object(){}.getClass().getEnclosingMethod().getName() + " Passed");

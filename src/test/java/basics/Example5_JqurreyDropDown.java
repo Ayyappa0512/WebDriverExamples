@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com5_JqurreyDropDown extends Base{
+public class Example5_JqurreyDropDown extends Base{
 
 	
 	@Test
@@ -19,7 +19,7 @@ public class Com5_JqurreyDropDown extends Base{
 		
 		driver.findElement(By.id("justAnInputBox")).click();
 		
-		Com5_JqurreyDropDown  obj = new Com5_JqurreyDropDown();
+		Example5_JqurreyDropDown  obj = new Example5_JqurreyDropDown();
 		//obj.selectchoicevalue(driver, "choice 1");
 		//obj.selectchoicevalue(driver, "choice 1", "choice 2", "choice 2 2", "choice 5");
 		obj.selectchoicevalue(driver, "All");

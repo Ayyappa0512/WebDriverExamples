@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com4_BootstrapsDropDown extends Base {
+public class Example4_BootstrapsDropDown extends Base {
 	
 	@Test
 	public void demobootstrapsdropdown() throws InterruptedException {

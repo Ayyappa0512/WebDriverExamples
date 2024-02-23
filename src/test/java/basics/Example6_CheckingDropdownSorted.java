@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class Com6_CheckingDropdownSorted extends Base {
+public class Example6_CheckingDropdownSorted extends Base {
 	
 	
 	@Test

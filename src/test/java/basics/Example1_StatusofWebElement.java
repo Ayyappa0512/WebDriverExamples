@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 @Listeners({utils.Listerners.class})
-public class Com1_StatusofWebElement extends Base {
+public class Example1_StatusofWebElement extends Base {
 	
 	
 	
